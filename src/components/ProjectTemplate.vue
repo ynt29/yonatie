@@ -3,17 +3,17 @@
     <div class="d-flex flex-column process-width">
       <p class="project-title font-weight-bold mb-2">{{ projectDetail.name }}</p>
       <img
-        :src="`../assets/images/${projectDetail.project_image}`"
+        src="../assets/images/financial_dashboard.png"
         alt="picture"
         class="mb-4 project-picture"
         v-if="projectDetail.project_image"
       />
-      <img
+      <!-- <img
         src="../assets/images/img_placeholder.png"
         alt="picture-default"
         class="project-picture mb-4"
         v-else
-      />
+      /> -->
       <div class="mb-2">
         <span class="font-weight-bold pe-2">Link:</span>
         <a 
