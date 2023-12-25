@@ -84,11 +84,11 @@ const props = defineProps<{
 }>();
 
 const img_computed = computed(() => {
-  return `yonatie/src/assets/images/${props.projectDetail.project_image}`;
+  return `../yonatie/src/assets/images/${props.projectDetail.project_image}`;
 });
 
 const default_img_computed = computed(() => {
-  return `yonatie/src/assets/images/img_placeholder.png`;
+  return `../yonatie/src/assets/images/img_placeholder.png`;
 });
 </script>
 
