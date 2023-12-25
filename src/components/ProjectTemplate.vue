@@ -3,13 +3,13 @@
     <div class="d-flex flex-column process-width">
       <p class="project-title font-weight-bold mb-2">{{ projectDetail.name }}</p>
       <img
-        :src="img_computed"
+        :src="`./yonatie/src/assets/images/${projectDetail.project_image}`"
         alt="picture"
         class="mb-4 project-picture"
         v-if="projectDetail.project_image"
       />
       <img
-        :src="default_img_computed"
+        src="../assets/images/img_placeholder.png"
         alt="picture-default"
         class="project-picture mb-4"
         v-else
@@ -83,13 +83,13 @@ const props = defineProps<{
   projectDetail: any;
 }>();
 
-const img_computed = computed(() => {
-  return `../yonatie/src/assets/images/${props.projectDetail.project_image}`;
-});
+// const img_computed = computed(() => {
+//   return `../yonatie/src/assets/images/${props.projectDetail.project_image}`;
+// });
 
-const default_img_computed = computed(() => {
-  return `../yonatie/src/assets/images/img_placeholder.png`;
-});
+// const default_img_computed = computed(() => {
+//   return `../yonatie/src/assets/images/img_placeholder.png`;
+// });
 </script>
 
 <style scoped lang="scss">

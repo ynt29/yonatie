@@ -14,7 +14,7 @@
           with a passionate interest in the world of data analytics.
         </p>
       </div>
-      <img :src="mypic_computed" alt="mypic" class="mypic mb-2" />
+      <img src="../assets/images/img_placeholder.png" alt="mypic" class="mypic mb-2" />
     </article>
   </div>
 </template>
@@ -24,9 +24,9 @@ import { ref, computed } from "vue";
 
 const fadeContainer = ref();
 
-const mypic_computed = computed(() => {
-  return `../yonatie/src/assets/images/mypic.png`;
-});
+// const mypic_computed = computed(() => {
+//   return `../yonatie/src/assets/images/mypic.png`;
+// });
 
 </script>
 
