@@ -3,7 +3,7 @@
     <div class="d-flex flex-column process-width">
       <p class="project-title font-weight-bold mb-2">{{ projectDetail.name }}</p>
       <img
-        :src="`./yonatie/src/assets/images/${projectDetail.project_image}`"
+        :src="`../assets/images/${projectDetail.project_image}`"
         alt="picture"
         class="mb-4 project-picture"
         v-if="projectDetail.project_image"
